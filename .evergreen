@@ -1,0 +1,8 @@
+require 'capybara-webkit'
+
+Evergreen.configure do |config|
+  config.driver = :webkit
+  config.public_dir = 'lib'
+  config.spec_dir = 'spec'
+  config.template_dir = 'spec/templates'
+end
